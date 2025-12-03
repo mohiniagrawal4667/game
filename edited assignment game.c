@@ -10,8 +10,8 @@ void playGame() {
     int playerPos = 1;      // Player lane: 0,1,2
     int step = 0;           // Obstacle row
     int obstaclePos = rand() % 3;
-    int score = 0;          // Player score
-    int lives = 3;          // Player lives
+    int score = 0;          
+    int lives = 3;          
 
     while (lives > 0) {
         // ---- INPUT ----
@@ -61,7 +61,7 @@ void playGame() {
                     printf("Ouch! You hit the obstacle. Lives left: %d\n", lives);
                     Sleep(500);
                 } else {
-                    Beep(400, 400); // Long beep for game over
+                    Beep(400, 400);
                     printf("\nGAME OVER!\n");
                     printf("Final Score: %d\n", score);
                     break;
